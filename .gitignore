@@ -1,0 +1,8 @@
+*.suo
+*.user
+*.DotSettings*
+*.exe
+bin
+obj
+lib
+packages
