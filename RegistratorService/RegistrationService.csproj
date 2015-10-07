@@ -78,6 +78,7 @@
     </Content>
     <EmbeddedResource Include="Mappings\User.hbm.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Mappings\City.hbm.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

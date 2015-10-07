@@ -23,26 +23,40 @@
             <RowDefinition Height="30" />
             <RowDefinition Height="30" />
             <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="120"></ColumnDefinition>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+        <ToolBarPanel Grid.Row="0" Grid.ColumnSpan="2">
+            <ToolBarPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF307883" Offset="1"/>
+                    <GradientStop Color="#FF5FE9FF"/>
+                    <GradientStop Color="#FF28636D" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.942"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </ToolBarPanel.Background>
+            <Label Margin="10 0 0 0" FontSize="14">Регистрация клиента</Label>
+        </ToolBarPanel>
+        <Label Grid.Row="1" Grid.Column="0">First Name</Label>
+        <Label Grid.Row="2" Grid.Column="0">Last Name</Label>
+        <Label Grid.Row="3" Grid.Column="0">City</Label>
 
-        <Label Grid.Row="0" Grid.Column="0">First Name</Label>
-        <Label Grid.Row="1" Grid.Column="0">Last Name</Label>
-        <Label Grid.Row="2" Grid.Column="0">City</Label>
-
-        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=FirstName}" />
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=LastName}" />
-        <controls:AutoCompleteBox
-            Grid.Row="2" Grid.Column="1" ItemsSource="{Binding Cities, UpdateSourceTrigger=PropertyChanged}"
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=FirstName}" />
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=LastName}" />
+        <controls:AutoCompleteBox x:Name="acCity"
+            Grid.Row="3" Grid.Column="1" 
+            ItemsSource="{Binding Cities, UpdateSourceTrigger=PropertyChanged}"
     SelectedItem="{Binding Path=City, Mode=TwoWay,IsAsync=True}"
     ValueMemberPath="Name"
     ItemTemplate="{StaticResource AutoCompleteBoxItemTemplate}" />
-        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=City.Id, Mode=TwoWay}" />
-        <Label Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" Margin="5 0" Visibility="{Binding SavingProcess, Converter={StaticResource BoolToVisibilityConverter}}">saving...</Label>
-        <Grid  Grid.Row="4" Grid.Column="1">
+        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=City.Id, Mode=TwoWay}" />
+        <Label Grid.Row="5" Grid.Column="0" HorizontalAlignment="Right" Margin="5 0" 
+               Visibility="{Binding SavingProcess, Converter={StaticResource BoolToVisibilityConverter}}">saving...</Label>
+        <Grid  Grid.Row="5" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="30" />
             </Grid.RowDefinitions>
@@ -53,7 +67,7 @@
 
 
             <Button Grid.Row="0" Grid.Column="0" Margin="4,0,6,0" Command="{Binding Path=SaveCommand}" >Зарегистрировать</Button>
-            <Button Grid.Row="0" Grid.Column="1" Margin="5 0">Отмена</Button>
+            <Button Grid.Row="0" Grid.Column="1" Margin="5 0" Command="{Binding Path=CancelCommand}" Click="Button_Click">Отмена</Button>
         </Grid>
 
     </Grid>

@@ -24,5 +24,10 @@ namespace Registrator
             InitializeComponent();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            acCity.Text = string.Empty;
+        }
+
     }
 }
