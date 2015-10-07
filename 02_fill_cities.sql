@@ -1,4 +1,5 @@
-﻿INSERT INTO [City] (Id,Name) values ('A3F997ED-0A93-4A95-B50A-0000025C49F6', N'Москва');
+﻿delete from [City];
+INSERT INTO [City] (Id,Name) values ('A3F997ED-0A93-4A95-B50A-0000025C49F6', N'Москва');
 INSERT INTO [City] (Id,Name) values ('73A4625A-3800-48DD-A16C-00000E23AF38', N'Санкт-Петербург');
 INSERT INTO [City] (Id,Name) values ('A33AF41E-61EE-4C73-8A82-000042D04252', N'Оренбург');
 INSERT INTO [City] (Id,Name) values ('CE0EF9FD-A7A0-49C2-9EAD-000064C4FB91', N'Новокузнецк');

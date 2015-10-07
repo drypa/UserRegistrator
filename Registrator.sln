@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationTests", "Regist
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{15438B02-14EF-4705-B847-C2C7EFA12DCD}"
 	ProjectSection(SolutionItems) = preProject
-		fill_cities.sql = fill_cities.sql
+		01_add_city_table.sql = 01_add_city_table.sql
+		02_fill_cities.sql = 02_fill_cities.sql
+		03_add_user_table.sql = 03_add_user_table.sql
 	EndProjectSection
 EndProject
 Global
