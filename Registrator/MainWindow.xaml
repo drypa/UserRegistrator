@@ -53,7 +53,7 @@
     SelectedItem="{Binding Path=City, Mode=TwoWay,IsAsync=True}"
     ValueMemberPath="Name"
     ItemTemplate="{StaticResource AutoCompleteBoxItemTemplate}" />
-        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=City.Id, Mode=TwoWay}" />
+
         <Label Grid.Row="5" Grid.Column="0" HorizontalAlignment="Right" Margin="5 0" 
                Visibility="{Binding SavingProcess, Converter={StaticResource BoolToVisibilityConverter}}">saving...</Label>
         <Grid  Grid.Row="5" Grid.Column="1">
@@ -67,7 +67,7 @@
 
 
             <Button Grid.Row="0" Grid.Column="0" Margin="4,0,6,0" Command="{Binding Path=SaveCommand}" >Зарегистрировать</Button>
-            <Button Grid.Row="0" Grid.Column="1" Margin="5 0" Command="{Binding Path=CancelCommand}" Click="Button_Click">Отмена</Button>
+            <Button Grid.Row="0" Grid.Column="1" Margin="5 0" Command="{Binding Path=CancelCommand}" Click="ClearButton_Click">Отмена</Button>
         </Grid>
 
     </Grid>

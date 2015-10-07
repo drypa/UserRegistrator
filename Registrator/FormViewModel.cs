@@ -32,7 +32,7 @@ namespace Registrator
         #endregion INotifyPropertyChanged
 
         #region viewModel props
-        public virtual string LastName
+        public string LastName
         {
             get { return _lastName; }
             set
@@ -42,7 +42,7 @@ namespace Registrator
             }
         }
 
-        public virtual string FirstName
+        public string FirstName
         {
             get { return _firstName; }
             set
@@ -52,7 +52,7 @@ namespace Registrator
             }
         }
 
-        public virtual CityViewModel City
+        public CityViewModel City
         {
             get { return _city; }
             set
@@ -79,7 +79,7 @@ namespace Registrator
                 if (_saveCommand == null)
                 {
                     _saveCommand = new RelayCommand(
-                        param => Clear(),
+                        param => SaveObjectAsync(),
                         param => IsValid()
                     );
                 }
@@ -103,6 +103,9 @@ namespace Registrator
         }
 
         #endregion viewModel props
+
+
+
 
         public IEnumerable<CityViewModel> Cities
         {

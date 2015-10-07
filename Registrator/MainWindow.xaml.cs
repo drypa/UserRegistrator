@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 
 namespace Registrator
 {
@@ -12,10 +13,15 @@ namespace Registrator
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ClearButton_Click(object sender, RoutedEventArgs e)
         {
             acCity.Text = string.Empty;
         }
 
+        private void NewUser_OnNeedClearEvent(object sender, EventArgs e)
+        {
+            acCity.Text = string.Empty;
+
+        }
     }
 }
