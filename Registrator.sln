@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registrator", "Registrator\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationService", "RegistratorService\RegistrationService.csproj", "{350B2507-F829-4348-8630-FCF12C7B1150}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfCommon", "WcfCommon\WcfCommon.csproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationTests", "RegistrationTests\RegistrationTests.csproj", "{50BAB43C-329B-4377-AEB8-4AD3B0F89E63}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{15438B02-14EF-4705-B847-C2C7EFA12DCD}"
@@ -28,10 +26,6 @@ Global
 		{350B2507-F829-4348-8630-FCF12C7B1150}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{350B2507-F829-4348-8630-FCF12C7B1150}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{350B2507-F829-4348-8630-FCF12C7B1150}.Release|Any CPU.Build.0 = Release|Any CPU
-		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.Build.0 = Release|Any CPU
 		{50BAB43C-329B-4377-AEB8-4AD3B0F89E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{50BAB43C-329B-4377-AEB8-4AD3B0F89E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50BAB43C-329B-4377-AEB8-4AD3B0F89E63}.Release|Any CPU.ActiveCfg = Release|Any CPU

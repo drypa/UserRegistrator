@@ -41,9 +41,9 @@
             </ToolBarPanel.Background>
             <Label Margin="10 0 0 0" FontSize="14">Регистрация клиента</Label>
         </ToolBarPanel>
-        <Label Grid.Row="1" Grid.Column="0">First Name</Label>
-        <Label Grid.Row="2" Grid.Column="0">Last Name</Label>
-        <Label Grid.Row="3" Grid.Column="0">City</Label>
+        <Label Grid.Row="1" Grid.Column="0" Content="Имя"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Фамилия"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Город"/>
 
         <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=FirstName}" />
         <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=LastName}" />

@@ -103,12 +103,6 @@
     <Compile Include="Repositories\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WcfCommon\WcfCommon.csproj">
-      <Project>{15B3E0D2-6217-493A-A690-158C497F5318}</Project>
-      <Name>WcfCommon</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

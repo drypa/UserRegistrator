@@ -75,10 +75,6 @@
       <Project>{350B2507-F829-4348-8630-FCF12C7B1150}</Project>
       <Name>RegistrationService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WcfCommon\WcfCommon.csproj">
-      <Project>{15B3E0D2-6217-493A-A690-158C497F5318}</Project>
-      <Name>WcfCommon</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
